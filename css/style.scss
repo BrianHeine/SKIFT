@@ -1,7 +1,6 @@
-a   {
-    text-decoration: none;
-    color: black;
-}
+$gris:  #333;
+
+
 
 
 
@@ -55,7 +54,7 @@ nav li{
     color: #FFF;
     display: flex   table-column;
     
-    nav li:hover {
+    &:hover {
         color: white;
         padding-right: 10px;
         nav li {
@@ -64,7 +63,7 @@ nav li{
                 font-weight: 550;
                 color: #FFF;
                 display: flex   table-column;
-                nav a:hover {
+                &:hover {
                     color: white;
                     padding-right: 10px;
                     
@@ -74,13 +73,7 @@ nav li{
                         nav a {
                             transition: all .3s ease;
 
-                            @media  (max-width: 700px){
-                                .header{
-                                    flex-direction: column ;
                             
-                                }
-                            
-                            }
                         }
                     }
                     
@@ -93,7 +86,13 @@ nav li{
 
 }
 
+@media  (max-width: 700px){
+    .header{
+        flex-direction: column ;
 
+    }
+
+}
 
 
 
@@ -146,9 +145,9 @@ nav li{
                 text-transform: uppercase;
                 transition: all .3s ease-in-out;
 
-                .banner-content p:hover{
+                &:hover{
                     background-color: #fff;
-                    color: #333; 
+                    color:  $gris; 
 
                     @keyframes  banner{
                         0%{
@@ -237,7 +236,7 @@ nav li{
                         margin-bottom: 15px;
                         transition: all .3s ease;
 
-                        .footer-links   ul  li  a:hover {
+                        &:hover {
                             color: #FFFFFF;
                             padding-left: 6px;
 
@@ -253,22 +252,11 @@ nav li{
                                 color: #FFFFFF;
                                 transition: all .5s ease;
 
-                                .social-link   a:hover{
+                                    &:hover{
                                     background-color: #00c3ff;
                                     padding-right: 2px;
 
-                                    @media (max-width: 700px){
-                                        .footer-row{
-                                            text-align: center;
                                     
-                                        }
-                                    
-                                        .footer-links{
-                                            width: 100%;
-                                            margin-bottom: 30px;
-                                    
-                                        }
-                                    }
                                 
                                 }
 
@@ -291,12 +279,24 @@ nav li{
 
     
 }
+@media (max-width: 700px){
+    .footer-row{
+        text-align: center;
+
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+}
 
 /*      Usuario.html     */
 
 .usuarios{
     background-color: #ccc;
-    border: 1px solid #333;
+    border: 1px solid   $gris;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,21 +321,10 @@ nav li{
     padding: 10px;
     margin: 20px;
     background-color: #ccc;
-    border: 2px solid   #333;
+    border: 2px solid   $gris;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*          producto.html            */
 
@@ -346,7 +335,7 @@ nav li{
 
     .estilos-col{
         border: 2px solid  black ;
-        background-color:   #333;
+        background-color:   $gris;
         color: #fff;
         align-items: center;
         justify-content: center;
@@ -372,7 +361,7 @@ nav li{
         gap: 1rem;
 
         .text-grid{
-            background-color: #333;
+            background-color: $gris;
             color: #BBBBBB;
             border: 2px     solid   #24262B;
             padding: 8px;
@@ -399,7 +388,7 @@ REGISTRO.html
     text-align: center;
     margin: 10px;
     padding: 10px;
-    background-color: #333;
+    background-color: $gris;
     color: #ccc;
     margin: o   auto;
     

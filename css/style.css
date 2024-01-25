@@ -1,8 +1,3 @@
-a {
-  text-decoration: none;
-  color: black;
-}
-
 @font-face {
   font-family: dhurjati;
   src: url(../fonts/Dhurjati.ttf);
@@ -39,34 +34,34 @@ nav li {
   color: #FFF;
   display: flex table-column;
 }
-nav li nav li:hover {
+nav li:hover {
   color: white;
   padding-right: 10px;
 }
-nav li nav li:hover nav li {
+nav li:hover nav li {
   transition: all 0.3s ease;
 }
-nav li nav li:hover nav li nav a {
+nav li:hover nav li nav a {
   font-weight: 550;
   color: #FFF;
   display: flex table-column;
 }
-nav li nav li:hover nav li nav a nav a:hover {
+nav li:hover nav li nav a:hover {
   color: white;
   padding-right: 10px;
 }
-nav li nav li:hover nav li nav a nav a:hover nav {
+nav li:hover nav li nav a:hover nav {
   padding: 10px, 0px;
 }
-nav li nav li:hover nav li nav a nav a:hover nav nav a {
+nav li:hover nav li nav a:hover nav nav a {
   transition: all 0.3s ease;
 }
+
 @media (max-width: 700px) {
-  nav li nav li:hover nav li nav a nav a:hover nav nav a .header {
+  .header {
     flex-direction: column;
   }
 }
-
 /*      MAIN        */
 /*      BANNER!!!!!!!!!!!!        */
 .banner {
@@ -105,7 +100,7 @@ nav li nav li:hover nav li nav a nav a:hover nav nav a {
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
-.banner .banner-content .banner-content h1 .banner-content p .banner-content p:hover {
+.banner .banner-content .banner-content h1 .banner-content p:hover {
   background-color: #fff;
   color: #333;
 }
@@ -169,11 +164,11 @@ nav li nav li:hover nav li nav a nav a:hover nav nav a {
   margin-bottom: 15px;
   transition: all 0.3s ease;
 }
-.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a .footer-links ul li a:hover {
+.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a:hover {
   color: #FFFFFF;
   padding-left: 6px;
 }
-.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a .footer-links ul li a:hover .social-link a {
+.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a:hover .social-link a {
   display: inline-block;
   min-height: 40px;
   width: 40px;
@@ -185,20 +180,20 @@ nav li nav li:hover nav li nav a nav a:hover nav nav a {
   color: #FFFFFF;
   transition: all 0.5s ease;
 }
-.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a .footer-links ul li a:hover .social-link a .social-link a:hover {
+.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a:hover .social-link a:hover {
   background-color: #00c3ff;
   padding-right: 2px;
 }
+
 @media (max-width: 700px) {
-  .container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a .footer-links ul li a:hover .social-link a .social-link a:hover .footer-row {
+  .footer-row {
     text-align: center;
   }
-  .container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a .footer-links ul li a:hover .social-link a .social-link a:hover .footer-links {
+  .footer-links {
     width: 100%;
     margin-bottom: 30px;
   }
 }
-
 /*      Usuario.html     */
 .usuarios {
   background-color: #ccc;
