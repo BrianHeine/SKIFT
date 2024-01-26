@@ -1,0 +1,16 @@
+.usuarios{
+    background-color: #ccc;
+    border: 1px solid   $gris;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+
+    .mensaje-usuario{
+        text-align: center;
+
+
+    }
+}

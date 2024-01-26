@@ -10,7 +10,6 @@
   list-style: none;
 }
 
-/*  HEADER  */
 .header {
   display: flex;
   min-height: 70px;
@@ -57,13 +56,6 @@ nav li:hover nav li nav a:hover nav nav a {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 700px) {
-  .header {
-    flex-direction: column;
-  }
-}
-/*      MAIN        */
-/*      BANNER!!!!!!!!!!!!        */
 .banner {
   position: relative;
   width: 100%;
@@ -131,7 +123,82 @@ nav li:hover nav li nav a:hover nav nav a {
   }
 }
 
-/*      FOOTER      */
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+  background-color: #ccc;
+  border: 2px solid #333;
+}
+
+.titulo-nosotros {
+  display: flex;
+  justify-content: center;
+}
+.titulo-nosotros .nosotros-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.titulo-nosotros .nosotros-grid .text-grid {
+  background-color: #333;
+  color: #BBBBBB;
+  border: 2px solid #24262B;
+  padding: 8px;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-producto {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.titulo-producto .estilos-col {
+  border: 2px solid black;
+  background-color: #333;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: auto;
+}
+
+.div-registro {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #ccc;
+  margin: o auto;
+}
+.div-registro .email-mensaje {
+  color: #ccc;
+}
+
+.usuarios {
+  background-color: #ccc;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+}
+.usuarios .mensaje-usuario {
+  text-align: center;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -186,6 +253,11 @@ nav li:hover nav li nav a:hover nav nav a {
 }
 
 @media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
   .footer-row {
     text-align: center;
   }
@@ -193,88 +265,4 @@ nav li:hover nav li nav a:hover nav nav a {
     width: 100%;
     margin-bottom: 30px;
   }
-}
-/*      Usuario.html     */
-.usuarios {
-  background-color: #ccc;
-  border: 1px solid #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  margin: 20px;
-}
-.usuarios .mensaje-usuario {
-  text-align: center;
-}
-
-/*         Contacto.html             */
-.contactos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  margin: 20px;
-  background-color: #ccc;
-  border: 2px solid #333;
-}
-
-/*          producto.html            */
-.titulo-producto {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-.titulo-producto .estilos-col {
-  border: 2px solid black;
-  background-color: #333;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 10px;
-  padding: auto;
-}
-
-/*          Nosotros.html       */
-.titulo-nosotros {
-  display: flex;
-  justify-content: center;
-}
-.titulo-nosotros .nosotros-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-}
-.titulo-nosotros .nosotros-grid .text-grid {
-  background-color: #333;
-  color: #BBBBBB;
-  border: 2px solid #24262B;
-  padding: 8px;
-  margin: 10px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-/*
-
-REGISTRO.html
-
-*/
-.div-registro {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  background-color: #333;
-  color: #ccc;
-  margin: o auto;
-}
-.div-registro .email-mensaje {
-  color: #ccc;
 }/*# sourceMappingURL=style.css.map */
