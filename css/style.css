@@ -1,3 +1,8 @@
+a {
+  list-style-type: none;
+  color: white;
+}
+
 @font-face {
   font-family: dhurjati;
   src: url(../fonts/Dhurjati.ttf);
@@ -23,7 +28,7 @@
   align-items: center;
   color: #fff;
 }
-.header .logo .logo img {
+.header .logo .logo-img {
   height: 50px;
   margin-right: 10px;
 }
