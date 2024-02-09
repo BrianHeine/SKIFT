@@ -66,6 +66,10 @@ nav li nav a:hover nav nav a {
   min-height: 100vh;
 }
 
+.texto {
+  font-size: 1.5rem;
+}
+
 .banner {
   position: relative;
   width: 100%;
