@@ -5,20 +5,20 @@
     align-items: center;
     padding: 15px;
     justify-content: space-between;
-    .logo   {
-        display: flex;
-        align-items: center;
-        color: #fff;
-        .logo-img   {
-            height: 50px;
-            margin-right: 10px;
-        
-        
-        }
-    }
+    
     
 }
-
+.logo   {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    .logo-img   {
+        height: 50px;
+        margin-right: 10px;
+    
+    
+    }
+}
 
 
 nav li{
@@ -31,30 +31,30 @@ nav li{
         padding-right: 10px;
         nav li {
             transition: all .3s ease;
-            nav a{
-                font-weight: 550;
-                color: #FFF;
-                display: flex   table-column;
-                &:hover {
-                    color: white;
-                    padding-right: 10px;
-                    
-                    nav {
-                        padding: 10px, 0px;
-                        
-                        nav a {
-                            transition: all .3s ease;
-
-                            
-                        }
-                    }
-                    
-                }
-                
-            }
+            
         }
     }
-    
+    nav a{
+        font-weight: 550;
+        color: #FFF;
+        display: flex   table-column;
+        &:hover {
+            color: white;
+            padding-right: 10px;
+            
+            nav {
+                padding: 10px, 0px;
+                
+                nav a {
+                    transition: all .3s ease;
+
+                    
+                }
+            }
+            
+        }
+        
+    }
 
 }
 

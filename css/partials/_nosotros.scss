@@ -1,25 +1,25 @@
 .titulo-nosotros{
     display: flex;
     justify-content: center;
+}
 
-    .nosotros-grid{
-        display: grid;
-        grid-template-columns: 1fr  1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1rem;
+.nosotros-grid{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
 
-        .text-grid{
-            background-color: $gris;
-            color: #BBBBBB;
-            border: 2px     solid   #24262B;
-            padding: 8px;
-            margin: 10px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
+    .text-grid{
+        background-color: $gris;
+        color: #BBBBBB;
+        border: 2px     solid   #24262B;
+        padding: 8px;
+        margin: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
 
 
-        }
-    
     }
+
 }

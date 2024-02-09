@@ -23,12 +23,13 @@ a {
   padding: 15px;
   justify-content: space-between;
 }
-.header .logo {
+
+.logo {
   display: flex;
   align-items: center;
   color: #fff;
 }
-.header .logo .logo-img {
+.logo .logo-img {
   height: 50px;
   margin-right: 10px;
 }
@@ -45,20 +46,24 @@ nav li:hover {
 nav li:hover nav li {
   transition: all 0.3s ease;
 }
-nav li:hover nav li nav a {
+nav li nav a {
   font-weight: 550;
   color: #FFF;
   display: flex table-column;
 }
-nav li:hover nav li nav a:hover {
+nav li nav a:hover {
   color: white;
   padding-right: 10px;
 }
-nav li:hover nav li nav a:hover nav {
+nav li nav a:hover nav {
   padding: 10px, 0px;
 }
-nav li:hover nav li nav a:hover nav nav a {
+nav li nav a:hover nav nav a {
   transition: all 0.3s ease;
+}
+
+.main {
+  min-height: 100vh;
 }
 
 .banner {
@@ -143,13 +148,14 @@ nav li:hover nav li nav a:hover nav nav a {
   display: flex;
   justify-content: center;
 }
-.titulo-nosotros .nosotros-grid {
+
+.nosotros-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
 }
-.titulo-nosotros .nosotros-grid .text-grid {
+.nosotros-grid .text-grid {
   background-color: #333;
   color: #BBBBBB;
   border: 2px solid #24262B;
@@ -165,15 +171,20 @@ nav li:hover nav li nav a:hover nav nav a {
   justify-content: center;
   padding: 10px;
 }
-.titulo-producto .estilos-col {
+
+.estilos-col {
   border: 2px solid black;
   background-color: #333;
   color: #fff;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  margin: 10px;
-  padding: auto;
+  padding: 5rem;
+}
+
+.estilo-row {
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .div-registro {
@@ -202,59 +213,59 @@ nav li:hover nav li nav a:hover nav nav a {
 }
 .usuarios .mensaje-usuario {
   text-align: center;
+  font-size: 1rem;
+  align-items: center;
 }
 
-.container {
-  max-width: 1200px;
-}
-.container .footer {
-  background-color: #24262B;
-  padding: 80px;
-}
-.container .footer .footer-row {
+.footer {
+  background-color: #24262b;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.container .footer .footer-row .footer-links {
-  width: 25%;
-  padding: 0 15px;
+.footer .footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+  padding: 2rem;
 }
-.container .footer .footer-row .footer-links .footer-links h4 {
-  font-size: 1rem;
+.footer .footer-container .footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.footer .footer-container .footer-items .item-title {
   color: white;
-  margin-bottom: 25px;
-  font-weight: 500;
-  border-bottom: 2px solid #00c3ff;
+  font-size: 30px;
   padding-bottom: 10px;
-  display: inline-block;
+  border-bottom: solid 3px #00c3ff;
 }
-.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a {
-  font-size: 18px;
+.footer .footer-container .footer-items a {
   text-decoration: none;
-  color: #BBBBBB;
-  display: block;
-  margin-bottom: 15px;
-  transition: all 0.3s ease;
+  font-size: 22px;
+  color: #ccc;
+  transition: 0.2s ease-in;
 }
-.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a:hover {
-  color: #FFFFFF;
-  padding-left: 6px;
+.footer .footer-container .footer-items a:hover {
+  color: #00c3ff;
 }
-.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a:hover .social-link a {
-  display: inline-block;
-  min-height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  transition: all 0.5s ease;
+.footer .footer-container .footer-items .social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
 }
-.container .footer .footer-row .footer-links .footer-links h4 .footer-links ul li a:hover .social-link a:hover {
-  background-color: #00c3ff;
-  padding-right: 2px;
+.footer .footer-container .footer-items .social-icons a {
+  font-size: 25px;
+  transition: 0.2s ease-in;
+}
+.footer .footer-container .footer-items .social-icons a:hover {
+  color: #00c3ff;
 }
 
 @media (max-width: 700px) {
@@ -262,11 +273,11 @@ nav li:hover nav li nav a:hover nav nav a {
     flex-direction: column;
   }
 }
-@media (max-width: 700px) {
-  .footer-row {
+@media (max-width: 991px) {
+  .pie-row {
     text-align: center;
   }
-  .footer-links {
+  .pie-links {
     width: 100%;
     margin-bottom: 30px;
   }
